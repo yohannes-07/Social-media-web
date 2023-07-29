@@ -25,7 +25,7 @@ const __dirname = path.dirname(__filename)
 dotenv.config()
 const app = express()
 app.use(express.json())
-app.use(helmet)
+app.use(helmet())
 app.use(helmet.crossOriginResourcePolicy({policy : 'cross-origin'}))
 app.use(morgan('common'))
 app.use(bodyParser.json({limit: '30mb', extended: true}))
@@ -39,7 +39,7 @@ const storage = multer.diskStorage({
         cb(null, 'public/assets')
     },
     filename: function(req, file, cb){
-        cb(null, Date.now() + path.extname(file.originalname))
+        cb(null,file.originalname) //Date.now() + path.extname(file.originalname))
     }
     
 })
@@ -70,7 +70,9 @@ mongoose.connect(process.env.MONGO_URL, {
     /* ADD DATA ONE TIME */
     // User.insertMany(users);
     // Post.insertMany(posts);
-    
+
+
+
     })
     .catch((err) => {
         console.log(err.message)
