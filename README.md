@@ -20,7 +20,7 @@ MongoDB, Expressjs, React/Redux, Nodejs
 
 ## clone or download
 ```terminal
-$ git clone https://github.com/amazingandyyy/mern.git
+$ https://github.com/yohannes-07/Social-media-web.git
 $ yarn # or npm i
 ```
 
