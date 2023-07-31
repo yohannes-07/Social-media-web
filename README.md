@@ -1,1 +1,2 @@
-# Social-media-web
+# Social-media-web-app
+# MERN Stack 
