@@ -7,7 +7,7 @@ MongoDB, Expressjs, React/Redux, Nodejs
 </p>
 
 <p align="center">
-   <a href="https://github.com/amazingandyyy/mern/blob/master/LICENSE">
+   <a href"#">
       <img src="https://img.shields.io/badge/License-MIT-green.svg" />
    </a>
    <a href="https://circleci.com/gh/amazingandyyy/mern">
